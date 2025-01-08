@@ -1,5 +1,3 @@
-/* src/App.css */
-
 /* Tailwind Directives */
 @tailwind base;
 @tailwind components;
@@ -13,16 +11,16 @@ body {
     padding: 0;
     color: #333;
 }
-  
+
 h1, h2, h3 {
     font-family: 'Helvetica Neue', sans-serif;
 }
-  
+
 a {
     text-decoration: none;
     color: inherit;
 }
-  
+
 button {
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -31,19 +29,20 @@ button {
 /* Hero Section */
 .hero {
     background-color: #ffffff;
-    height: 100vh;
+    height: calc(100vh - 60px); /* Reduce height from 100vh to 80vh */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    margin-bottom: 40px; /* Add spacing below the hero section */
 }
-  
+
 .hero h1 {
     font-size: 3rem;
     color: #333;
 }
-  
+
 .hero .btn-primary {
     background-color: #007aff;
     color: white;
@@ -52,7 +51,7 @@ button {
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
 }
-  
+
 .hero .btn-primary:hover {
     background-color: #0051a8;
 }
@@ -68,20 +67,20 @@ button {
     padding: 10px 50px;
     z-index: 1000;
 }
-  
+
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
-  
+
 .navbar ul li {
     font-size: 1.1rem;
     padding: 10px;
     transition: color 0.3s ease;
 }
-  
+
 .navbar ul li:hover {
     color: #007aff;
 }
@@ -94,32 +93,31 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
-  
+
 footer a {
     color: white;
     text-decoration: underline;
 }
-  
+
 footer a:hover {
     color: #007aff;
 }
 
 /* Profile Image Styling */
 .profile-image {
-    width: 20vw; /* Responsive width based on the viewport width */
-    height: 20vw; /* Maintain aspect ratio */
-    max-width: 200px; /* Set a maximum width */
-    max-height: 200px; /* Set a maximum height */
-    object-fit: cover; /* Ensures the image scales proportionally */
-    border-radius: 50%; /* Makes the image circular */
-    margin-bottom: 20px; /* Adds space below the image */
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .profile-image {
-        width: 25vw; /* Slightly larger for tablets */
+        width: 25vw;
         height: 25vw;
         max-width: 150px;
         max-height: 150px;
@@ -128,7 +126,7 @@ footer a:hover {
 
 @media (max-width: 480px) {
     .profile-image {
-        width: 30vw; /* Larger for mobile screens */
+        width: 30vw;
         height: 30vw;
         max-width: 120px;
         max-height: 120px;
@@ -152,10 +150,11 @@ footer a:hover {
 #about p {
     font-size: 1rem;
     text-align: center;
-    max-width: 600px; /* To prevent text from stretching too wide */
+    max-width: 600px;
 }
 
-/* Reduce empty space in the about section */
+/* Adjust About Section Spacing */
 #about {
-    margin-top: 50px; /* Adjust if there is too much space above the section */
+    margin-top: 40px; /* Adjust spacing to reduce gap between sections */
+    padding-bottom: 40px; /* Add padding below the section for better spacing */
 }
