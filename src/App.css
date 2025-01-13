@@ -29,7 +29,7 @@ button {
 /* Hero Section */
 .hero {
     background-color: #ffffff;
-    height: calc(100vh - 60px); /* Reduce height from 100vh to 80vh */
+    height: calc(0vh - 0px); /* Reduce height from 100vh to 80vh */
     display: flex;
     justify-content: center;
     align-items: center;
