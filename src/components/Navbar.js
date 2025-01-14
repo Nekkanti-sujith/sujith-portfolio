@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   return (
-    <nav className="navbar fixed top-0 left-0 right-0 bg-white bg-opacity-80 p-4 shadow-md z-50">
-      <ul className="flex justify-between items-center">
-        <li><a href="#hero" className="text-xl text-gray-800 hover:text-blue-600">Home</a></li>
-        <li><a href="#about" className="text-xl text-gray-800 hover:text-blue-600">About</a></li>
-        <li><a href="#skills" className="text-xl text-gray-800 hover:text-blue-600">Skills</a></li>
-        <li><a href="#projects" className="text-xl text-gray-800 hover:text-blue-600">Projects</a></li>
-        <li><a href="#contact" className="text-xl text-gray-800 hover:text-blue-600">Contact</a></li>
-      </ul>
+    <nav className="fixed top-0 w-full bg-gray-900 text-white shadow-md z-50 py-4">
+      <div className="container mx-auto flex justify-between">
+        <Link to="hero" smooth={true} duration={500} className="hover:text-blue-400 cursor-pointer">Home</Link>
+        <Link to="about" smooth={true} duration={500} className="hover:text-blue-400 cursor-pointer">About</Link>
+        <Link to="skills" smooth={true} duration={500} className="hover:text-blue-400 cursor-pointer">Skills</Link>
+        <Link to="projects" smooth={true} duration={500} className="hover:text-blue-400 cursor-pointer">Projects</Link>
+        <Link to="contact" smooth={true} duration={500} className="hover:text-blue-400 cursor-pointer">Contact</Link>
+      </div>
     </nav>
   );
 }
